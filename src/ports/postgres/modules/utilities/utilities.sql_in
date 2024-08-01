@@ -261,7 +261,7 @@ m4_ifdef(`__HAS_FUNCTION_PROPERTIES__', `READS SQL DATA', `');
  * @returns \c TRUE if \c number is \c NaN, \c FALSE otherwise
  */
 CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.isnan(
-    number DOUBLE PRECISION
+    num DOUBLE PRECISION
 ) RETURNS BOOLEAN
 AS $$
     SELECT $1 = 'NaN'::DOUBLE PRECISION;
